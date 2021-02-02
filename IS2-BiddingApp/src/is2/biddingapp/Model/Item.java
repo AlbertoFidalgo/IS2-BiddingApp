@@ -31,6 +31,10 @@ public class Item {
         return currentPrice;
     }
     
+    public User getUser(){
+        return itemSeller;
+    }
+    
     public long getTimeRemaining(){
         return timeRemaining;
     }
@@ -49,6 +53,10 @@ public class Item {
             timeRemaining=0;
             active=false;
         }
+    }
+    
+    public boolean getActive(){
+        return active;
     }
     
     public void makeBid(Bid bid){
